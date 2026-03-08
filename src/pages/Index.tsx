@@ -26,19 +26,19 @@ const Index = () => {
               Merhaba, ben
             </p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] animate-slide-up">
-              Ad Soyad
+              Ayşenur Avşar
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl animate-slide-up stagger-1">
-              Full-stack geliştirici. Modern, kullanıcı odaklı ve performanslı web uygulamaları tasarlıyorum.
+              Bilgisayar Mühendisi. Yapay Zeka, Bilgisayar Görü ve Web Geliştirme konularında uzmanlaşmış yazılım geliştirici.
             </p>
             <div className="flex items-center gap-4 text-sm text-muted-foreground animate-slide-up stagger-2">
               <span className="flex items-center gap-1.5">
                 <MapPin className="w-4 h-4" />
-                İstanbul, Türkiye
+                Ankara, Türkiye
               </span>
               <span className="flex items-center gap-1.5">
                 <Mail className="w-4 h-4" />
-                hello@example.com
+                avsraysenur@gmail.com
               </span>
             </div>
             <div className="pt-6 animate-slide-up stagger-3">
@@ -60,12 +60,11 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-10">
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Yazılım geliştirmeye tutkuyla bağlı bir geliştiriciyim. Modern web teknolojileri kullanarak
-                  kullanıcı deneyimini ön planda tutan projeler geliştiriyorum.
+                  Kırıkkale Üniversitesi Bilgisayar Mühendisliği bölümü öğrencisiyim. Yapay Zeka, Bilgisayar Görü ve Web Geliştirme konularına tutkuyla bağlıyım.
                 </p>
                 <p>
-                  React ekosistemi, TypeScript ve modern CSS araçlarıyla çalışmayı seviyorum.
-                  Her projede temiz kod, erişilebilirlik ve performans prensiplerine bağlı kalıyorum.
+                  Internship deneyimlerimde seri haberleşme protokolleri, Web API geliştirme ve derin öğrenme modellemeleri üzerinde çalıştım.
+                  Her projede temiz kod, veri güvenliği ve performans prensiplerine bağlı kalıyorum.
                 </p>
               </div>
               <div className="space-y-4">
@@ -157,7 +156,7 @@ const Index = () => {
       <footer className="border-t border-border mt-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Ad Soyad. Tüm hakları saklıdır.
+            © {new Date().getFullYear()} Ayşenur Avşar. Tüm hakları saklıdır.
           </p>
         </div>
       </footer>
