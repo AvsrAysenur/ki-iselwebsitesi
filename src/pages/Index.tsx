@@ -7,11 +7,28 @@ import { Mail, MapPin, Send, ArrowDown } from "lucide-react";
 const Index = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form gönderimi burada işlenecek
-    alert("Mesajınız gönderildi! Teşekkürler.");
-    setFormData({ name: "", email: "", message: "" });
+    setSending(true);
+    try {
+      const res = await fetch("https://formspree.io/f/xpqywkwv", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        alert("Mesajınız gönderildi! Teşekkürler.");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert("Bir hata oluştu, lütfen tekrar deneyin.");
+      }
+    } catch {
+      alert("Bağlantı hatası, lütfen tekrar deneyin.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
