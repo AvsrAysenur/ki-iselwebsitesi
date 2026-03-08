@@ -44,7 +44,7 @@ export const projects: Project[] = [
     title: "Gerçek Zamanlı Şekil Tespiti",
     description: "Geometrik nesneleri algılayan bilgisayar görü sistemi.",
     longDescription: "MATLAB kullanarak gerçek zamanlı renk ve şekil tespiti sistemi geliştirdim. Segmentasyon, morfolojik işlemler ve kontur analizi uyguladım.",
-    image: "https://images.unsplash.com/photo-1635776999291-326558bba348?w=800&q=80",
+    image: "/src/assets/matlab-sekil-tespiti.png",
     tags: ["MATLAB", "Computer Vision", "Image Processing"],
     year: "2023",
   },
