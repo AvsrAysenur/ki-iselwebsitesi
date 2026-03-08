@@ -69,12 +69,12 @@ export const projects: Project[] = [
 ];
 
 export const skills = [
-  { name: "React", level: 95 },
-  { name: "TypeScript", level: 90 },
-  { name: "Node.js", level: 85 },
-  { name: "Tailwind CSS", level: 92 },
-  { name: "Next.js", level: 80 },
-  { name: "Python", level: 75 },
-  { name: "PostgreSQL", level: 78 },
-  { name: "Git", level: 88 },
+  { name: "Python", level: 95 },
+  { name: "C#", level: 75 },
+  { name: "Deep Learning (TensorFlow/PyTorch)", level: 85 },
+  { name: "ASP.NET MVC", level: 75 },
+  { name: "PostgreSQL", level: 80 },
+  { name: "Computer Vision (OpenCV)", level: 85 },
+  { name: "Streamlit", level: 90 },
+  { name: "Entity Framework", level: 80 },
 ];
