@@ -156,7 +156,7 @@ const Index = () => {
       <footer className="border-t border-border mt-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Ad Soyad. Tüm hakları saklıdır.
+            © {new Date().getFullYear()} Ayşenur Avşar. Tüm hakları saklıdır.
           </p>
         </div>
       </footer>
