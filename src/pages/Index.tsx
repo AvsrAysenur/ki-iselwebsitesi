@@ -56,33 +56,59 @@ const Index = () => {
         {/* Hakkımda */}
         <section className="py-20">
           <div className="rounded-3xl bg-card p-10 md:p-14 animate-scale-in">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Hakkımda</h2>
-            <div className="grid md:grid-cols-2 gap-10">
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  Kırıkkale Üniversitesi Bilgisayar Mühendisliği bölümü öğrencisiyim. Yapay Zeka, Bilgisayar Görü ve Web Geliştirme konularına tutkuyla bağlıyım.
-                </p>
-                <p>
-                  Internship deneyimlerimde seri haberleşme protokolleri, Web API geliştirme ve derin öğrenme modellemeleri üzerinde çalıştım.
-                  Her projede temiz kod, veri güvenliği ve performans prensiplerine bağlı kalıyorum.
-                </p>
-              </div>
-              <div className="space-y-4">
-                {skills.map((skill) => (
-                  <div key={skill.name} className="space-y-1.5">
-                    <div className="flex justify-between text-sm">
-                      <span className="font-medium">{skill.name}</span>
-                      <span className="text-muted-foreground">%{skill.level}</span>
-                    </div>
-                    <div className="h-2 rounded-full bg-muted overflow-hidden">
-                      <div
-                        className="h-full rounded-full bg-primary transition-all duration-1000 ease-out"
-                        style={{ width: `${skill.level}%` }}
-                      />
-                    </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Hakkımda</h2>
+            
+            <div className="space-y-4 text-muted-foreground leading-relaxed mb-10">
+              <p>
+                Kırıkkale Üniversitesi Bilgisayar Mühendisliği mezunuyum. Yazılım dünyasının birden fazla alanında aktif olarak çalışıyor ve kendimi sürekli geliştiriyorum.
+              </p>
+              <p>
+                <strong className="text-foreground">Machine Learning & Artificial Intelligence</strong> alanında derin öğrenme modelleri geliştiriyor, bilgisayar görüsü ve NLP projeleri üzerinde çalışıyorum. TensorFlow, PyTorch, OpenCV ve Streamlit başlıca kullandığım araçlar.
+              </p>
+              <p>
+                <strong className="text-foreground">.NET Backend & Frontend</strong> tarafında ASP.NET MVC, Entity Framework, Web API geliştirme ve DevExpress bileşenleri ile profesyonel uygulamalar oluşturuyorum. PostgreSQL ve SQL Server veritabanı yönetiminde deneyimliyim.
+              </p>
+              <p>
+                <strong className="text-foreground">Embedded Systems</strong> alanında RS-232, RS-422, RS-485 seri haberleşme protokolleri ve Modbus TCP/IP üzerinde çalışıyorum. Checksum doğrulamalı veri iletişimi ve gerçek zamanlı kontrol sistemleri geliştirme deneyimim var.
+              </p>
+              <p>
+                Staj deneyimlerimde İNDES Mühendislik'te seri haberleşme, BAŞARSOFT'ta Web API geliştirme üzerinde çalıştım. Her projede temiz kod, veri güvenliği ve performans prensiplerine bağlı kalıyorum.
+              </p>
+            </div>
+
+            {/* Uzmanlık Alanları */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+              {[
+                { icon: "🤖", title: "AI / ML", desc: "Deep Learning, CNN, NLP" },
+                { icon: "👁️", title: "Computer Vision", desc: "OpenCV, MATLAB, OCT" },
+                { icon: "⚙️", title: ".NET Backend", desc: "ASP.NET MVC, EF, API" },
+                { icon: "🔌", title: "Embedded", desc: "RS-232, Modbus, Serial" },
+              ].map((area) => (
+                <div key={area.title} className="rounded-2xl bg-muted/50 p-5 text-center space-y-2 hover:bg-muted transition-colors">
+                  <span className="text-3xl">{area.icon}</span>
+                  <h4 className="font-semibold text-sm">{area.title}</h4>
+                  <p className="text-xs text-muted-foreground">{area.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Yetenekler */}
+            <h3 className="text-lg font-semibold mb-4">Teknik Yetenekler</h3>
+            <div className="grid md:grid-cols-2 gap-x-10 gap-y-3">
+              {skills.map((skill) => (
+                <div key={skill.name} className="space-y-1.5">
+                  <div className="flex justify-between text-sm">
+                    <span className="font-medium">{skill.name}</span>
+                    <span className="text-muted-foreground">%{skill.level}</span>
                   </div>
-                ))}
-              </div>
+                  <div className="h-2 rounded-full bg-muted overflow-hidden">
+                    <div
+                      className="h-full rounded-full bg-primary transition-all duration-1000 ease-out"
+                      style={{ width: `${skill.level}%` }}
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
