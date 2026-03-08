@@ -26,19 +26,19 @@ const Index = () => {
               Merhaba, ben
             </p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] animate-slide-up">
-              Ad Soyad
+              Ayşenur Avşar
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl animate-slide-up stagger-1">
-              Full-stack geliştirici. Modern, kullanıcı odaklı ve performanslı web uygulamaları tasarlıyorum.
+              Bilgisayar Mühendisi. Yapay Zeka, Bilgisayar Görü ve Web Geliştirme konularında uzmanlaşmış yazılım geliştirici.
             </p>
             <div className="flex items-center gap-4 text-sm text-muted-foreground animate-slide-up stagger-2">
               <span className="flex items-center gap-1.5">
                 <MapPin className="w-4 h-4" />
-                İstanbul, Türkiye
+                Ankara, Türkiye
               </span>
               <span className="flex items-center gap-1.5">
                 <Mail className="w-4 h-4" />
-                hello@example.com
+                avsraysenur@gmail.com
               </span>
             </div>
             <div className="pt-6 animate-slide-up stagger-3">
