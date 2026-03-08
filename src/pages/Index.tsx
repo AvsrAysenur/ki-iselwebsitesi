@@ -7,11 +7,28 @@ import { Mail, MapPin, Send, ArrowDown } from "lucide-react";
 const Index = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form gönderimi burada işlenecek
-    alert("Mesajınız gönderildi! Teşekkürler.");
-    setFormData({ name: "", email: "", message: "" });
+    setSending(true);
+    try {
+      const res = await fetch("https://formspree.io/f/xpqywkwv", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        alert("Mesajınız gönderildi! Teşekkürler.");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        alert("Bir hata oluştu, lütfen tekrar deneyin.");
+      }
+    } catch {
+      alert("Bağlantı hatası, lütfen tekrar deneyin.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -168,10 +185,11 @@ const Index = () => {
               />
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-medium hover:bg-primary/90 hover:scale-[1.02] transition-all"
+                disabled={sending}
+                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-medium hover:bg-primary/90 hover:scale-[1.02] transition-all disabled:opacity-50 disabled:pointer-events-none"
               >
                 <Send className="w-4 h-4" />
-                Gönder
+                {sending ? "Gönderiliyor..." : "Gönder"}
               </button>
             </form>
           </div>
