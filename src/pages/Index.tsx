@@ -185,10 +185,11 @@ const Index = () => {
               />
               <button
                 type="submit"
-                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-medium hover:bg-primary/90 hover:scale-[1.02] transition-all"
+                disabled={sending}
+                className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-primary-foreground font-medium hover:bg-primary/90 hover:scale-[1.02] transition-all disabled:opacity-50 disabled:pointer-events-none"
               >
                 <Send className="w-4 h-4" />
-                Gönder
+                {sending ? "Gönderiliyor..." : "Gönder"}
               </button>
             </form>
           </div>
