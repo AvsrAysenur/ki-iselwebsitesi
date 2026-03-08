@@ -29,7 +29,7 @@ const Index = () => {
               Ayşenur Avşar
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl animate-slide-up stagger-1">
-              Bilgisayar Mühendisi. Yapay Zeka, Bilgisayar Görü ve Web Geliştirme konularında uzmanlaşmış yazılım geliştirici.
+              Bilgisayar Mühendisi. AI/ML, Computer Vision, .NET Backend ve Embedded Systems alanlarında uzmanlaşmış yazılım geliştirici.
             </p>
             <div className="flex items-center gap-4 text-sm text-muted-foreground animate-slide-up stagger-2">
               <span className="flex items-center gap-1.5">
