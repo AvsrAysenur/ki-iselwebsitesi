@@ -25,9 +25,10 @@ export const projects: Project[] = [
     id: "2",
     title: "Retinal Hastalık Tespiti",
     description: "OCT görüntülerinden retinal hastalık sınıflandırması ve açıklanabilir AI.",
-    longDescription: "TensorFlow ve PyTorch kullanarak OCT veri setlerinde retinal hastalık tespit modelleri geliştirdim. EfficientNet, DenseNet ve ResNet mimarilerini birleştiren Soft Ensemble modeli tasarladım. XAI teknikler ile model kararlarını yorumladım.",
-    image: "https://images.unsplash.com/photo-1576091160550-112173f31c77?w=800&q=80",
-    tags: ["TensorFlow", "PyTorch", "XAI", "Medical Imaging", "Deep Learning"],
+    longDescription: "Kaggle'dan alınan 87.000 OCT görüntüsü üzerinde CNV, DME, Drusen ve Normal sınıflarını ayırt eden derin öğrenme modelleri eğittim. VGG16, ResNet50, MobileNetV2, EfficientNetB0, DenseNet121 ve GoogleNet (PyTorch) modellerini karşılaştırdım. DenseNet121, EfficientNetB0 ve ResNet50 çıktılarını Soft Ensemble yöntemiyle birleştirerek en yüksek doğruluğu elde ettim. SHAP ile açıklanabilir AI (XAI) analizi yaparak model kararlarını yorumladım. Streamlit uygulaması ile kullanıcıların OCT görüntüsü yükleyip sınıflandırma sonuçlarını görmelerini sağladım.",
+    image: "/images/retina-oct.jpg",
+    tags: ["TensorFlow", "PyTorch", "XAI", "SHAP", "Medical Imaging", "Deep Learning", "Streamlit"],
+    githubUrl: "https://github.com/AvsrAysenur/Bitirme-2_Retina_G-z_Hastal-klar-_Tespiti",
     year: "2024",
   },
   {
