@@ -60,12 +60,11 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-10">
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Yazılım geliştirmeye tutkuyla bağlı bir geliştiriciyim. Modern web teknolojileri kullanarak
-                  kullanıcı deneyimini ön planda tutan projeler geliştiriyorum.
+                  Kırıkkale Üniversitesi Bilgisayar Mühendisliği bölümü öğrencisiyim. Yapay Zeka, Bilgisayar Görü ve Web Geliştirme konularına tutkuyla bağlıyım.
                 </p>
                 <p>
-                  React ekosistemi, TypeScript ve modern CSS araçlarıyla çalışmayı seviyorum.
-                  Her projede temiz kod, erişilebilirlik ve performans prensiplerine bağlı kalıyorum.
+                  Internship deneyimlerimde seri haberleşme protokolleri, Web API geliştirme ve derin öğrenme modellemeleri üzerinde çalıştım.
+                  Her projede temiz kod, veri güvenliği ve performans prensiplerine bağlı kalıyorum.
                 </p>
               </div>
               <div className="space-y-4">
