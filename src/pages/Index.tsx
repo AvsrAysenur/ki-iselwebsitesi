@@ -46,7 +46,7 @@ const Index = () => {
               Ayşenur Avşar
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl animate-slide-up stagger-1">
-              Bilgisayar Mühendisi. AI/ML, Computer Vision, .NET Backend ve Embedded Systems alanlarında uzmanlaşmış yazılım geliştirici.
+              Bilgisayar Mühendisi. AI/ML, Computer Vision, .NET Backend, Mobil Uygulama (Flutter) ve Embedded Systems alanlarında uzmanlaşmış yazılım geliştirici.
             </p>
             <div className="flex items-center gap-4 text-sm text-muted-foreground animate-slide-up stagger-2">
               <span className="flex items-center gap-1.5">
@@ -89,16 +89,20 @@ const Index = () => {
                 <strong className="text-foreground">Embedded Systems</strong> alanında RS-232, RS-422, RS-485 seri haberleşme protokolleri ve Modbus TCP/IP üzerinde çalışıyorum. Checksum doğrulamalı veri iletişimi ve gerçek zamanlı kontrol sistemleri geliştirme deneyimim var.
               </p>
               <p>
+                <strong className="text-foreground">Mobil Uygulama Geliştirme</strong> tarafında Flutter & Dart ile cross-platform uygulamalar geliştiriyorum. Kamera entegrasyonu, OCR (ML Kit) ve .NET Web API ile haberleşen mobil sağlık asistanı projeleri üzerinde çalıştım.
+              </p>
+              <p>
                 Staj deneyimlerimde İNDES Mühendislik'te seri haberleşme, BAŞARSOFT'ta Web API geliştirme üzerinde çalıştım. Her projede temiz kod, veri güvenliği ve performans prensiplerine bağlı kalıyorum.
               </p>
             </div>
 
             {/* Uzmanlık Alanları */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-10">
               {[
                 { icon: "🤖", title: "AI / ML", desc: "Deep Learning, CNN, NLP" },
                 { icon: "👁️", title: "Computer Vision", desc: "OpenCV, MATLAB, OCT" },
                 { icon: "⚙️", title: ".NET Backend", desc: "ASP.NET MVC, EF, API" },
+                { icon: "📱", title: "Mobil (Flutter)", desc: "Flutter, Dart, OCR" },
                 { icon: "🔌", title: "Embedded", desc: "RS-232, Modbus, Serial" },
               ].map((area) => (
                 <div key={area.title} className="rounded-2xl bg-muted/50 p-5 text-center space-y-2 hover:bg-muted transition-colors">
