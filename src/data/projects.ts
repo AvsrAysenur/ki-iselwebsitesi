@@ -131,6 +131,15 @@ export const projects: Project[] = [
     year: "2024",
   },
   {
+    id: "14",
+    title: "Gıda İçerik Analiz Mobil Uygulaması",
+    description: "OCR ve karekod ile gıda katkı maddelerini analiz eden mobil sağlık asistanı.",
+    longDescription: "Flutter & Dart ile geliştirilen, gıda paketlerindeki içerik listelerini karekod okutarak veya fotoğraf çekerek analiz eden mobil uygulama. Mobil tarafta camera, google_mlkit_text_recognition (OCR), image ve http kütüphaneleri kullanılır. Backend tarafında ASP.NET Core Web API (.NET 8.0 & C#), Entity Framework Core ve Dependency Injection ile profesyonel bir mimari kurulmuştur. Microsoft SQL Server veritabanında E-kodları, katkı maddesi isimleri, risk puanları ve detaylı açıklamalar tutulur. OCR ile çekilen metin parçalanarak veritabanıyla eşleştirilir; kullanıcıya kırmızı ünlemler, risk puanları ve BottomSheet detay pencereleri ile görselleştirilmiş sağlık risk analizi sunulur. Amaç: bilinçli tüketim, gerçek zamanlı veri analizi ve erişilebilir sağlık bilgisi sağlamak.",
+    image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80",
+    tags: ["Flutter", "Dart", ".NET 8", "C#", "ASP.NET Core Web API", "Entity Framework Core", "SQL Server", "OCR", "ML Kit", "Mobile"],
+    year: "2025",
+  },
+  {
     id: "13",
     title: "Villarch Mimarlık Web Sitesi",
     description: "VİLLARCH mimarlık firması için responsive web sitesi.",
