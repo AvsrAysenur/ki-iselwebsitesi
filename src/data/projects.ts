@@ -1,3 +1,6 @@
+import aiGoruntuAnaliziImage from "@/assets/ai-goruntu-analizi.jpg";
+import kisiselWebSitesiImage from "@/assets/kisisel-web-sitesi.jpg";
+
 export interface Project {
   id: string;
   title: string;
@@ -11,6 +14,26 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  {
+    id: "16",
+    title: "Yapay Zekâ Destekli Görüntü Analizi",
+    description: "Görüntüdeki nesneyi tanıyıp ilgili bilgileri derleyen uçtan uca yapay zekâ sistemi.",
+    longDescription: "Bir görüntüde ön planda bulunan nesneyi tespit eden, nesneyle ilgili anahtar kelimeler üreten ve bu bilgilerden yararlanarak web üzerindeki ilgili içerikleri özetleyen uçtan uca bir sistem geliştirdim. Görsel ve metin ilişkisini OpenCLIP ile kurdum; sınıflandırma katmanında PyTorch tabanlı MLP, kavramsal ilişkilerde WordNet, içerik aramada DuckDuckGo API ve özetlemede TF-IDF kullandım.",
+    image: aiGoruntuAnaliziImage,
+    tags: ["Python", "OpenCLIP", "PyTorch", "WordNet", "TF-IDF", "Computer Vision"],
+    githubUrl: "https://github.com/AvsrAysenur/Yapay_Zeka_Destekli_Goruntu_Analizi_ve_Nesne_Tabanli_Bilgi_Getirme_Sistemi",
+    year: "2026",
+  },
+  {
+    id: "15",
+    title: "Kişisel Portfolyo Web Sitesi",
+    description: "Projelerimi ve teknik yeteneklerimi sunduğum modern portfolyo sitesi.",
+    longDescription: "Projelerimi, teknik yeteneklerimi ve iletişim bilgilerimi tek bir yerde sunmak için modern ve farklı ekran boyutlarına uyumlu bir kişisel portfolyo sitesi geliştirdim. Projelerin görsellerini, kullandığım teknolojileri ve ayrıntılı açıklamalarını genişleyen kartlar aracılığıyla erişilebilir hâle getirdim.",
+    image: kisiselWebSitesiImage,
+    tags: ["React", "TypeScript", "Vite", "Tailwind CSS"],
+    githubUrl: "https://github.com/AvsrAysenur/ki-iselwebsitesi",
+    year: "2026",
+  },
   {
     id: "1",
     title: "Bitki Hastalığı Tespiti",
