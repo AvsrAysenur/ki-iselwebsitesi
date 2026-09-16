@@ -1,13 +1,14 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
-import { projects, skills } from "@/data/projects";
+import { projects as featuredProjects, skills } from "@/data/projects";
+import { useGithubProjects } from "@/hooks/use-github-projects";
 import { Mail, MapPin, Send, ArrowDown } from "lucide-react";
 
 const Index = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
-
   const [sending, setSending] = useState(false);
+  const { projects, isLoading: projectsLoading } = useGithubProjects(featuredProjects);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -139,7 +140,7 @@ const Index = () => {
           <div className="flex items-center justify-between mb-12">
             <h2 className="text-3xl md:text-4xl font-bold">Projelerim</h2>
             <span className="text-sm text-muted-foreground">
-              {projects.length} proje
+              {projects.length} proje{projectsLoading ? " · GitHub güncelleniyor" : ""}
             </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

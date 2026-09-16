@@ -43,8 +43,22 @@ const ProjectCard = ({ project }: { project: Project }) => {
           {project.year}
         </span>
 
+        {project.githubUrl && (
+          <a
+            href={project.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(event) => event.stopPropagation()}
+            className="absolute bottom-4 right-4 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full bg-background/90 text-foreground shadow-sm backdrop-blur-sm transition-transform hover:scale-105"
+            aria-label={`${project.title} GitHub deposunu aç`}
+            title="GitHub deposunu aç"
+          >
+            <Github className="h-4 w-4" />
+          </a>
+        )}
+
         {/* Title overlay */}
-        <div className="absolute bottom-4 left-4 right-4">
+        <div className={`absolute bottom-4 left-4 ${project.githubUrl ? "right-16" : "right-4"}`}>
           <h3 className="text-primary-foreground text-xl font-bold font-serif">
             {project.title}
           </h3>
