@@ -46,7 +46,7 @@ const Index = () => {
               Ayşenur Avşar
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl animate-slide-up stagger-1">
-              Bilgisayar Mühendisi. AI/ML, Computer Vision, .NET Backend, Mobil Uygulama (Flutter) ve Embedded Systems alanlarında uzmanlaşmış yazılım geliştirici.
+              Bilgisayar mühendisiyim. Yapay zekâ, makine öğrenmesi, bilgisayarlı görü, .NET, frontend, mobil uygulama ve gömülü sistemler alanlarında kendimi geliştirmeye çalışan bir yazılım geliştiriciyim.
             </p>
             <div className="flex items-center gap-4 text-sm text-muted-foreground animate-slide-up stagger-2">
               <span className="flex items-center gap-1.5">
@@ -71,28 +71,28 @@ const Index = () => {
         </section>
 
         {/* Hakkımda */}
-        <section className="py-20">
+        <section id="hakkimda" className="scroll-mt-24 py-20">
           <div className="rounded-3xl bg-card p-10 md:p-14 animate-scale-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Hakkımda</h2>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-10">
               <p>
-                Kırıkkale Üniversitesi Bilgisayar Mühendisliği mezunuyum. Yazılım dünyasının birden fazla alanında aktif olarak çalışıyor ve kendimi sürekli geliştiriyorum.
+                Kırıkkale Üniversitesi Bilgisayar Mühendisliği Bölümü mezunuyum. Yazılımın farklı alanlarında üretmeyi, yeni teknolojiler öğrenmeyi ve kendimi sürekli geliştirmeyi önemsiyorum.
               </p>
               <p>
-                <strong className="text-foreground">Machine Learning & Artificial Intelligence</strong> alanında derin öğrenme modelleri geliştiriyor, bilgisayar görüsü ve NLP projeleri üzerinde çalışıyorum. TensorFlow, PyTorch, OpenCV ve Streamlit başlıca kullandığım araçlar.
+                <strong className="text-foreground">Makine Öğrenmesi ve Yapay Zekâ</strong> alanında derin öğrenme modelleri geliştiriyor; bilgisayarlı görü ve doğal dil işleme projeleri üzerinde çalışıyorum. Bu çalışmalarımda başlıca TensorFlow, PyTorch, OpenCV ve Streamlit kullanıyorum.
               </p>
               <p>
-                <strong className="text-foreground">.NET Backend & Frontend</strong> tarafında ASP.NET MVC, Entity Framework, Web API geliştirme ve DevExpress bileşenleri ile profesyonel uygulamalar oluşturuyorum. PostgreSQL ve SQL Server veritabanı yönetiminde deneyimliyim.
+                <strong className="text-foreground">.NET Backend ve Frontend</strong> tarafında ASP.NET MVC, Entity Framework, Web API ve DevExpress bileşenleriyle uygulamalar geliştiriyorum. PostgreSQL ve SQL Server veritabanlarıyla çalışıyorum.
               </p>
               <p>
-                <strong className="text-foreground">Embedded Systems</strong> alanında RS-232, RS-422, RS-485 seri haberleşme protokolleri ve Modbus TCP/IP üzerinde çalışıyorum. Checksum doğrulamalı veri iletişimi ve gerçek zamanlı kontrol sistemleri geliştirme deneyimim var.
+                <strong className="text-foreground">Gömülü Sistemler</strong> alanında RS-232, RS-422 ve RS-485 seri haberleşme protokolleri ile Modbus TCP/IP üzerine çalışıyorum. Sağlama toplamı doğrulamalı veri iletişimi ve gerçek zamanlı kontrol sistemleri geliştiriyorum.
               </p>
               <p>
-                <strong className="text-foreground">Mobil Uygulama Geliştirme</strong> tarafında Flutter & Dart ile cross-platform uygulamalar geliştiriyorum. Kamera entegrasyonu, OCR (ML Kit) ve .NET Web API ile haberleşen mobil sağlık asistanı projeleri üzerinde çalıştım.
+                <strong className="text-foreground">Mobil Uygulama Geliştirme</strong> alanında Flutter ve Dart ile platformlar arası uygulamalar geliştiriyorum. Kamera entegrasyonu, OCR (ML Kit) ve .NET Web API ile iletişim kuran mobil sağlık asistanı projeleri üzerinde çalışıyorum.
               </p>
               <p>
-                Staj deneyimlerimde İNDES Mühendislik'te seri haberleşme, BAŞARSOFT'ta Web API geliştirme üzerinde çalıştım. Her projede temiz kod, veri güvenliği ve performans prensiplerine bağlı kalıyorum.
+                Stajlarım sırasında İNDES Mühendislik'te seri haberleşme, BAŞARSOFT'ta ise Web API geliştirme üzerine çalıştım. Projelerimde temiz kod, veri güvenliği ve performans ilkelerini gözetiyorum.
               </p>
             </div>
 
